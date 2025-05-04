@@ -1,1 +1,34 @@
+openapi: 3.0.3
+info:
+  title: N-ary Tree API
+  version: 1.0.0
+paths:
+  /tree:
+    get:
+      summary: Get the root of the n-ary tree
+      responses:
+        '200':
+          description: Root node of the tree
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Node'
 
+components:
+  schemas:
+    Node:
+      type: object
+      properties:
+        value:
+          type: string
+          description: Value of the node
+        next:
+          $ref: '#/components/schemas/Node'
+    List:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Value of the node
+        head:
+          $ref: '#/components/schemas/Node'
