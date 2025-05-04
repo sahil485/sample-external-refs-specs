@@ -31,4 +31,10 @@ components:
           type: string
           description: Value of the node
         head:
-          $ref: '#/components/schemas/Node'
+          type: object
+          properties:
+            value:
+              type: string
+              description: Value of the node
+            next:
+              $ref: '#/components/schemas/List/properties/head'
