@@ -37,7 +37,7 @@
               },
               "upcCaseCode": {
                 "$ref": "#/components/schemas/UpcCaseCode"
-              }
+              },
               "id": {
                 "$ref": "#/components/schemas/PrimaryItemIdentifiers"
               }
