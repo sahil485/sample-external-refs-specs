@@ -1,5 +1,5 @@
 {
-  "openapi": "2.6.0",
+  "asyncapi": "2.6.0",
   "info": {
     "title": "Account Summary Feed",
     "version": "1.0.0",
