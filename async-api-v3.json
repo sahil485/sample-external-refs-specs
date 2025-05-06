@@ -70,6 +70,33 @@
           "$ref": "https://raw.githubusercontent.com/sahil485/sample-external-refs-specs/refs/heads/main/async-api-v3.json#/components/schemas/MessageData"
         }
       }
+    },
+    "schemas": {
+      "MessageData": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "age": {
+                "type": "integer"
+              },
+              "address": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
